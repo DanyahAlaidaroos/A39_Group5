@@ -10,6 +10,10 @@ public class Order {
     private ArrayList<Recipe> Recipes;
 
 //-----------------------------{Constructor}---------------------------------
+    public Order(){
+        
+    }
+    
     public Order(long OrderNo, Date Orderdate, String OrderState, Customer customer) {
         this.Recipes = new ArrayList();
         this.OrderNo = OrderNo;

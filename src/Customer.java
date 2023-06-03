@@ -86,6 +86,7 @@ public class Customer extends Person {
         }
         System.out.println("do you have a discount code (yes/no) ");
         String Enter = input.next();
+        order.CalculateCost();
         if (Enter.equalsIgnoreCase("yes")) {
             System.out.println("Enter discount percentage: ");
             double disPercentage = input.nextDouble();
